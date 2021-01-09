@@ -1,0 +1,38 @@
+.filter{
+    background-color: $color-filter-cyan;
+    padding: .8rem .8rem .65rem .8rem;
+    font-weight: 700;
+    color: darken($color-dark-cyan, 2%);
+    border-radius: 10px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    display: inline-block; 
+    position: relative;
+    cursor: pointer;
+
+    &:hover:not(.filter--x){
+        color: #fff;
+        background-color: $color-dark-cyan;
+    }
+
+    &--delete{
+        background-color: $color-dark-cyan;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        transform: translateX(80%);
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        padding: 0 .5rem;
+        border-top-right-radius: inherit;
+        border-bottom-right-radius: inherit;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $color-darker-cyan;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.flag{
+    border-radius: 50rem;
+    // display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .63rem .4rem .4rem .4rem;
+    line-height: 1;
+    font-size: 1rem;
+
+    @media screen and (min-width: 375px){
+        font-size: .65rem;
+    }
+
+    &--new{
+        background-color: $color-dark-cyan;
+    }
+
+    &--featured{
+        background-color: $color-darker-cyan;
+    }
+}

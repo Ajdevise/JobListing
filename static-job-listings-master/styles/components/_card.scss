@@ -1,0 +1,132 @@
+.card{
+    background-color: #fff; 
+    padding: 1.5rem 2rem 1.2rem 2rem;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 5rem;
+
+    @media screen and (min-width: 62.5em){
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+
+    &--featured{
+        border-left: 6px solid $color-dark-cyan;
+    }
+
+    &__profile{
+        width: 18%;
+        max-width: 5rem;
+        min-width: 4rem;
+        margin-top: -3.4rem;
+        display: block;
+        margin-bottom: 1.5rem;
+
+        @media screen and (min-width: 62.5em){
+            margin-top: -.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 0;
+        }
+    }
+
+    &__information{
+        padding-bottom: .75rem;
+    }
+
+    &__field{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .flag{
+            margin-left: .7rem;
+        }
+    }
+
+    &__company{
+        font-weight: 700;
+        color: $color-dark-cyan;
+
+        @media screen and (min-width: 375px){
+            margin: 0;
+        }
+    }
+
+    &__job{
+        margin-top: .8rem;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        &:hover{
+            color: $color-dark-cyan;
+        }
+        
+        @media screen and (min-width: 375px){
+            margin: .6rem 0;
+        }
+    }
+
+    &__spanSeparator{
+        padding: 0 1rem;
+        position: relative;
+
+        &::before,
+        &::after{
+            content: "";
+            width: .3rem;
+            height: .3rem;
+            border-radius: 50%;
+            background-color: $color-grayish-cyan;
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+        }
+
+        &::before{
+            left: .18rem;
+        }
+
+        &::after{
+            right: .15rem;
+        }
+    }
+
+    hr{
+        color: rgba($color-grayish-cyan, .25);
+    }
+
+    span:not(.flag){
+        text-transform: capitalize;
+    }
+
+    &__filters{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+}
+
+
+// <article class="card card--featured">
+//         <img src="/images/photosnap.svg" alt="Photosnap user">
+//         <div class="card__information">
+//           <div class="card__field">
+//             <p class="card__company">Photosnap</p>
+//             <span class="flag flag--new">New!</span>
+//             <span class="flag flag--featured">featured</span>
+//           </div>
+//           <h3>Senior frontend developer</h3>
+//           <span>1d ago</span>
+//           <span class="card__spanSeparator">full time</span>
+//           <span>USA only</span>
+//         </div>
+//         <hr>
+//         <div class="card__filters">
+//           <div class="filter">Frontend</div>
+//           <div class="filter">Senior</div>
+//           <div class="filter">HTML</div>
+//           <div class="filter">CSS</div>
+//           <div class="filter">JavaScript</div>
+//         </div>
+//       </article>
